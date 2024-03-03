@@ -1,0 +1,31 @@
+.main-container {
+  width: 100%;
+}
+
+.main-container img {
+  width: 100%;
+}
+.slick-slider:focus img {
+  outline: none;
+}
+.box {
+  width: 100%;
+}
+.image {
+  width: 80%;
+}
+
+.image:hover {
+  outline: none;
+  background-color: #ede9dd;
+}
+.card {
+  background-color: #70645c;
+  min-height: 22rem;
+  max-width: 80%;
+  margin: auto;
+  color: white;
+  padding: 1rem;
+  border: 1px solid white;
+  position: relative;
+}
