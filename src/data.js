@@ -424,3 +424,22 @@ export const timelessData = [
     desc2:"We use certified organic ingredients which make our products totally safe. Free from parabens, silicone, sulphates, pthalates, GNIOE with some of our products are vegan while all of them are  cruelty free and safe for planet."
   },
 ];
+export const animation = [
+  {
+    imgUrl: "https://media.tenor.com/QHiMI4_3Dq4AAAAM/move-truck.gif",
+    text: "FREE SHIPING",
+  },
+  {
+    imgUrl: "https://media1.tenor.com/m/6-gnRPoPEvYAAAAd/food-samples.gif",
+    text: "COMPLIMENTARY SAMPLER",
+  },
+  {
+    imgUrl:
+      "https://media.tenor.com/H2OzfwMHhCQAAAAM/refer-a-friend-mobile-plans.gif",
+    text: "ACE REFERAL",
+  },
+  {
+    imgUrl: "https://media.tenor.com/t7aI5VVWTvwAAAAM/gift-christmas-gift.gif",
+    text: "GREATE REWARD",
+  },
+];

@@ -9,6 +9,7 @@ import BestSeller from "./BestSeller";
 import Testimonial from "./Testimonial";
 import Timeless from "./Timeless";
 import Footer from "./Footer ";
+import Animation from "./Animation";
 
 const Allcomponents = () => {
   return (
@@ -21,6 +22,7 @@ const Allcomponents = () => {
       <BestSeller />
       <Testimonial />
       <Timeless />
+      <Animation/>
       <Footer />
       <Bottombar />
     </div>

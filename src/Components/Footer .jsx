@@ -61,7 +61,7 @@ const Footer = () => {
             Address: 175, EPIP Industrial Area, Whitefield, Bangalore - 560066
           </p>
           <p style={{ marginBottom: "0.5rem" }}>FOLLOW US</p>
-          <div style={{display:"flex",justifyContent:"space-between",width:"60%",marginTop:"1rem"}}>
+          <div style={{display:"flex",justifyContent:"space-between",width:"50%",marginTop:"1.5rem"}}>
             <img src={twitter} alt="" />
             <img src={facebook} alt="" />
             <img src={youtube} alt="" />
