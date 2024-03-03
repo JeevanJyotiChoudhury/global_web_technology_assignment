@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { timelessData } from "../data";
-import bgImage from "../assets/Component 15 – 86.png";
+import bgImage from "../assets/Image 18.png";
 
 const Timeless = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -13,21 +13,22 @@ const Timeless = () => {
 
   const itemStyle = {
     border: "2px solid black",
-    padding: "1rem",
     textAlign: "center",
     position: "relative",
-    minHeight: "22rem",
+    minHeight: "27rem",
   };
 
-  const headingStyle = (index) => ({
+  const headingStyle = {
     position: "absolute",
     top: "50%",
     left: "50%",
     fontSize: "2rem",
     transform: "translate(-50%, -50%)",
     transition: "opacity 0.3s ease",
-    opacity: hoveredIndex === null || hoveredIndex !== index ? 1 : 0,
-  });
+    opacity: 1,
+    width: "70%",
+    margin: "auto",
+  };
 
   const descriptionStyle = {
     position: "absolute",
@@ -35,7 +36,9 @@ const Timeless = () => {
     left: "50%",
     transform: "translate(-50%, -50%)",
     transition: "opacity 0.3s ease",
-    opacity: hoveredIndex !== null ? 1 : 0,
+    opacity: 0,
+    width: "70%",
+    margin: "auto",
   };
 
   return (
@@ -58,12 +61,45 @@ const Timeless = () => {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <div style={headingStyle(index)}>
+            <div
+              style={{
+                marginTop: "25%",
+              }}
+            >
+              <img
+                src={bgImage}
+                alt=""
+                style={{ opacity: "0.3" }}
+                width="100%"
+                height="150%"
+              />
+            </div>
+            <div
+              style={{
+                ...headingStyle,
+                opacity: hoveredIndex === index ? 0 : 1,
+              }}
+            >
               <p>{el.heading}</p>
             </div>
-            <div style={descriptionStyle}>
-              <p style={{ fontSize: "1.5rem" }}>{el.heading}</p>
-              <p>{el.desc}</p>
+            <div
+              style={{
+                ...descriptionStyle,
+                opacity: hoveredIndex === index ? 1 : 0,
+              }}
+            >
+              <p style={{ fontSize: "1.5rem", paddingBottom: "1.5rem" }}>
+                {el.heading}
+              </p>
+              <p style={{ fontSize: "0.8rem", marginTop: "0.5rem" }}>
+                {el.desc1}
+              </p>
+              <p style={{ fontSize: "0.8rem", marginTop: "0.5rem" }}>
+                {el.desc2}
+              </p>
+              <p style={{ fontSize: "0.8rem", marginTop: "0.5rem" }}>
+                {el.desc3}
+              </p>
             </div>
           </div>
         ))}

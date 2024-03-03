@@ -404,17 +404,23 @@ export const customerTestimonials = [
 export const timelessData = [
   {
     heading: "the Place holder",
-    desc: "Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty",
+    desc1: "Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty or solve a specific concern.",
     bgImage: buttonImg2,
+    desc3:"Gift yourself goodness made the ancient way.",
+    desc2:"We use certified organic ingredients which make our products totally safe. Free from parabens, silicone, sulphates, pthalates, GNIOE with some of our products are vegan while all of them are  cruelty free and safe for planet."
   },
   {
     heading: "The forgotten way",
-    desc: "Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty",
+    desc1: "Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty or solve a specific concern.",
     bgImage: buttonImg2,
+    desc3:"Gift yourself goodness made the ancient way.",
+    desc2:"We use certified organic ingredients which make our products totally safe. Free from parabens, silicone, sulphates, pthalates, GNIOE with some of our products are vegan while all of them are  cruelty free and safe for planet."
   },
   {
     heading: "PURE from nature fully organic",
-    desc: "Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty",
+    desc1: "Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty or solve a specific concern.",
     bgImage: buttonImg2,
+    desc3:"Gift yourself goodness made the ancient way.",
+    desc2:"We use certified organic ingredients which make our products totally safe. Free from parabens, silicone, sulphates, pthalates, GNIOE with some of our products are vegan while all of them are  cruelty free and safe for planet."
   },
 ];
