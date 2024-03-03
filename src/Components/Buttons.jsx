@@ -5,7 +5,7 @@ const Buttons = ({ selectedCategory, handleCategoryChange }) => {
   return (
     <div
       style={{
-        width: "70%",
+        width: "100%",
         margin: "auto",
         display: "flex",
         justifyContent: "space-between",
