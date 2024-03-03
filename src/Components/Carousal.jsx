@@ -12,8 +12,8 @@ const Carousal = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     arrows: false,
   };
   return (
