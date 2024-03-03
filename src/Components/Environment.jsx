@@ -11,7 +11,7 @@ const Environment = () => {
     speed: 1000,
     slidesToShow: 3, // Show 4 items at a time
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: false, // Add arrows for navigation
   };
