@@ -22,6 +22,7 @@ const Buttons = ({ selectedCategory, handleCategoryChange }) => {
             borderRadius: "60px",
             padding: "0.5rem 1rem",
             border: "2px solid #737373",
+            cursor:"pointer",
             backgroundColor:
               selectedCategory === button.label.toLowerCase()
                 ? "pink"

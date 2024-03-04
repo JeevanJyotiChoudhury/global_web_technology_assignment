@@ -17,7 +17,7 @@ const Testimonial = () => {
     arrows: true,
     nextArrow: (
       <div>
-        <div className="next-slick-arrow">
+        <div className="next-slick-arrow" style={{cursor:"pointer"}}>
           <img src={rightArrow} alt="" />
         </div>
       </div>
@@ -25,7 +25,7 @@ const Testimonial = () => {
 
     prevArrow: (
       <div>
-        <div className="next-slick-arrow">
+        <div className="next-slick-arrow" style={{cursor:"pointer"}}>
           <img src={leftArrow} alt="" />
         </div>
       </div>

@@ -38,7 +38,7 @@ const Environment = () => {
           {environmentData.description}
         </p>
       </div>
-      <Slider {...settings} style={{ width: "40%" }}>
+      <Slider {...settings} style={{ width: "40%", cursor:"pointer" }}>
         {environmentCarousal.map((el, index) => (
           <div key={index} className="box">
             <img src={el.src} alt={el.alt} className="image" />
