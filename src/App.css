@@ -374,6 +374,13 @@
   .timelessGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .animationGrid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+  }
+  .circular-container {
+    height: 26rem;
+  }
 }
 @media all and (min-width: 1280px) and (max-width: 1350px) {
   .circular-container {
