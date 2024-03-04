@@ -9,11 +9,11 @@ const Environment = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 3, // Show 4 items at a time
+    slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: false, // Add arrows for navigation
+    arrows: false,
   };
 
   return (
