@@ -18,6 +18,7 @@ const Timeless = () => {
     textAlign: "center",
     position: "relative",
     minHeight: "27rem",
+    maxHeight: "35rem",
   };
 
   const headingStyle = {
