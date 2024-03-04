@@ -370,3 +370,14 @@
     margin: auto;
   }
 }
+
+@media all and (min-width: 1280px) and (max-width: 1350px) {
+  .circular-container {
+    height: 14rem;
+  }
+}
+@media all and (min-width: 1920px) {
+  .circular-container {
+    height: 20rem;
+  }
+}

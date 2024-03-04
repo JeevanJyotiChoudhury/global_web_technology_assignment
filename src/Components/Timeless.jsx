@@ -3,7 +3,9 @@ import { timelessData } from "../data";
 import bgImage from "../assets/Image 18.png";
 
 const Timeless = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndexes, setHoveredIndexes] = useState(
+    Array(timelessData.length).fill(false)
+  );
 
   const gridContainerStyle = {
     display: "grid",
@@ -20,13 +22,13 @@ const Timeless = () => {
 
   const headingStyle = {
     position: "absolute",
-    top: "50%",
+    top: "8%",
     left: "50%",
     fontSize: "2rem",
     transform: "translate(-50%, -50%)",
-    transition: "opacity 0.3s ease",
+    transition: "top 0.3s ease, transform 0.3s ease",
     opacity: 1,
-    width: "70%",
+    width: "90%",
     margin: "auto",
   };
 
@@ -41,8 +43,20 @@ const Timeless = () => {
     margin: "auto",
   };
 
+  const handleMouseEnter = (index) => {
+    const updatedIndexes = [...hoveredIndexes];
+    updatedIndexes[index] = true;
+    setHoveredIndexes(updatedIndexes);
+  };
+
+  const handleMouseLeave = (index) => {
+    const updatedIndexes = [...hoveredIndexes];
+    updatedIndexes[index] = false;
+    setHoveredIndexes(updatedIndexes);
+  };
+
   return (
-    <div className="timelessMain" >
+    <div className="timelessMain">
       <h1
         style={{
           textAlign: "center",
@@ -58,14 +72,10 @@ const Timeless = () => {
           <div
             key={index}
             style={itemStyle}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={() => handleMouseLeave(index)}
           >
-            <div
-              style={{
-                marginTop: "25%",
-              }}
-            >
+            <div style={{ marginTop: "25%" }}>
               <img
                 src={bgImage}
                 alt=""
@@ -77,7 +87,7 @@ const Timeless = () => {
             <div
               style={{
                 ...headingStyle,
-                opacity: hoveredIndex === index ? 0 : 1,
+                top: hoveredIndexes[index] ? "15%" : "50%",
               }}
             >
               <p>{el.heading}</p>
@@ -85,13 +95,10 @@ const Timeless = () => {
             <div
               style={{
                 ...descriptionStyle,
-                opacity: hoveredIndex === index ? 1 : 0,
+                opacity: hoveredIndexes[index] ? 1 : 0,
               }}
             >
-              <p style={{ fontSize: "1.5rem", paddingBottom: "1.5rem" }}>
-                {el.heading}
-              </p>
-              <p style={{ fontSize: "0.8rem", marginTop: "0.5rem" }}>
+              <p style={{ fontSize: "0.8rem", paddingTop: "5rem" }}>
                 {el.desc1}
               </p>
               <p style={{ fontSize: "0.8rem", marginTop: "0.5rem" }}>
