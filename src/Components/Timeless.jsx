@@ -42,7 +42,7 @@ const Timeless = () => {
   };
 
   return (
-    <div style={{ width: "70%", margin: "auto", padding: "2rem 0" }}>
+    <div className="timelessMain" >
       <h1
         style={{
           textAlign: "center",
@@ -53,7 +53,7 @@ const Timeless = () => {
       >
         why timeless
       </h1>
-      <div style={gridContainerStyle}>
+      <div className="timelessGrid">
         {timelessData.map((el, index) => (
           <div
             key={index}

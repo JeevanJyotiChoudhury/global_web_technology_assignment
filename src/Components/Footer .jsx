@@ -9,13 +9,7 @@ const Footer = () => {
   return (
     <div style={{ backgroundColor: "#71645c", width: "100%", color: "white" }}>
       <div
-        style={{
-          width: "70%",
-          margin: "auto",
-          display: "flex",
-          justifyContent: "space-between",
-          paddingTop: "1rem",
-        }}
+        className="footerMain"
       >
         <div style={{ paddingBottom: "1rem", marginBottom: "1rem" }}>
           <p style={{ fontSize: "1.2rem", marginBottom: "1rem" }}>SHOP</p>
@@ -61,7 +55,7 @@ const Footer = () => {
             Address: 175, EPIP Industrial Area, Whitefield, Bangalore - 560066
           </p>
           <p style={{ marginBottom: "0.5rem" }}>FOLLOW US</p>
-          <div style={{display:"flex",justifyContent:"space-between",width:"50%",marginTop:"1.5rem"}}>
+          <div className="footerLogo">
             <img src={twitter} alt="" />
             <img src={facebook} alt="" />
             <img src={youtube} alt="" />

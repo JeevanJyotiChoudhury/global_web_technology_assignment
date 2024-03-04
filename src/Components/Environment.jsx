@@ -26,25 +26,24 @@ const Environment = () => {
         alignItems: "center",
         padding: "1rem 0",
       }}
+      className="mainDiv"
     >
-      <div style={{ width: "60%", textAlign: "center" }}>
-        <h1 style={{ color: "#70645C", fontSize: "2.5rem" }}>
-          {environmentData.heading1}
-        </h1>
-        <h1 style={{ color: "#70645C", fontSize: "2.5rem" }}>
-          {environmentData.heading2}
-        </h1>
-        <p style={{ width: "70%", margin: "auto" }}>
+      <div class="textDiv">
+        <h1 className="texth1">{environmentData.heading1}</h1>
+        <h1 className="texth1">{environmentData.heading2}</h1>
+        <p  class="textPara">
           {environmentData.description}
         </p>
       </div>
-      <Slider {...settings} style={{ width: "40%", cursor:"pointer" }}>
-        {environmentCarousal.map((el, index) => (
-          <div key={index} className="box">
-            <img src={el.src} alt={el.alt} className="image" />
-          </div>
-        ))}
-      </Slider>
+      <div className="sliderDiv">
+        <Slider {...settings} style={{ cursor: "pointer" }}>
+          {environmentCarousal.map((el, index) => (
+            <div key={index} className="box">
+              <img src={el.src} alt={el.alt} className="image" />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

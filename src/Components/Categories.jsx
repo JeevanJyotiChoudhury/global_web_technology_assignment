@@ -13,45 +13,17 @@ const Categories = ({ selectedCategory }) => {
 
   const visibleCards = showAllCards ? totalCards : 4;
 
-  const gridContainerStyle = {
-    display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gap: "1.5rem",
-    width: "100%",
-    
-  };
-
   return (
     <div style={{ margin: "2rem 0" }}>
-      <div className="product-container" style={gridContainerStyle}>
+      <div className="product-container">
         {categoryData.slice(0, visibleCards).map((product, index) => (
           <div key={index}>
             <img src={product.img} alt={product.name} width="100%" />
-            <p
-              style={{
-                fontSize: "0.9rem",
-                textAlign: "center",
-                padding: "0.3rem 0",
-              }}
-            >
+            <p className="nameDiv">
               {product.name}
             </p>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                width: "60%",
-                margin: "auto",
-                justifyContent: "space-between",
-                padding: "0 0.5rem",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
+            <div className="star">
+              <div>
                 {[...Array(product.fullstar)].map((index) => (
                   <img key={index} src={product.fullstarimg} alt="fullstar" />
                 ))}
@@ -59,23 +31,11 @@ const Categories = ({ selectedCategory }) => {
                   <img src={product.halfstarimg} alt="halfstar" />
                 )}
               </div>
-              <p
-                style={{
-                  fontSize: "0.7rem",
-                  padding: "0.3rem 0",
-                  display: "flex",
-                  justifyContent: "flex-end",
-                }}
-              >
+              <p>
                 {product.reviews}
               </p>
             </div>
-            <p
-              style={{
-                textAlign: "center",
-                fontSize: "0.9rem",
-                padding: "0.3rem 0",
-              }}
+            <p className="price"
             >
               {product.price}
             </p>
@@ -92,12 +52,7 @@ const Categories = ({ selectedCategory }) => {
         >
           <button
             onClick={toggleShowCards}
-            style={{
-              borderRadius: "50px",
-              padding: "0.2rem 2rem",
-              border: "2px solid #707070",
-              boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-            }}
+            className="buttonDiv"
           >
             {showAllCards ? "View Less" : "View All"}
           </button>

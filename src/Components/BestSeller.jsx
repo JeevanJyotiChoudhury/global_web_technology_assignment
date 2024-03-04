@@ -11,22 +11,9 @@ const BestSeller = () => {
   };
 
   const visibleCards = showAllCards ? totalCards : 8;
-
-  const gridContainerStyle = {
-    display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gap: "1.5rem",
-  };
-
   return (
     <div
-      style={{
-        margin: "2rem 0",
-        borderBottom: "2px solid #cdcdcd",
-        width: "70%",
-        margin: "auto",
-      }}
-    >
+      className="bestSellerDiv">
       <h1
         style={{
           textAlign: "center",
@@ -37,35 +24,13 @@ const BestSeller = () => {
       >
         Our Best seller
       </h1>
-      <div className="product-container" style={gridContainerStyle}>
+      <div className="bestSeller">
         {bestSellerData.slice(0, visibleCards).map((product, index) => (
           <div key={index}>
             <img src={product.img} alt={product.name} width="100%" />
-            <p
-              style={{
-                fontSize: "0.9rem",
-                textAlign: "center",
-                padding: "0.3rem 0",
-              }}
-            >
-              {product.name}
-            </p>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                width: "60%",
-                margin: "auto",
-                justifyContent: "space-between",
-                padding: "0 0.5rem",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
+            <p className="nameDiv">{product.name}</p>
+            <div className="star">
+              <div>
                 {[...Array(product.fullstar)].map((index) => (
                   <img key={index} src={product.fullstarimg} alt="fullstar" />
                 ))}
@@ -73,26 +38,9 @@ const BestSeller = () => {
                   <img src={product.halfstarimg} alt="halfstar" />
                 )}
               </div>
-              <p
-                style={{
-                  fontSize: "0.7rem",
-                  padding: "0.3rem 0",
-                  display: "flex",
-                  justifyContent: "flex-end",
-                }}
-              >
-                {product.reviews}
-              </p>
+              <p>{product.reviews}</p>
             </div>
-            <p
-              style={{
-                textAlign: "center",
-                fontSize: "0.9rem",
-                padding: "0.3rem 0",
-              }}
-            >
-              {product.price}
-            </p>
+            <p className="price">{product.price}</p>
           </div>
         ))}
       </div>
@@ -104,15 +52,7 @@ const BestSeller = () => {
             margin: "2rem 0",
           }}
         >
-          <button
-            onClick={toggleShowCards}
-            style={{
-              borderRadius: "50px",
-              padding: "0.2rem 2rem",
-              border: "2px solid #707070",
-              boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-            }}
-          >
+          <button onClick={toggleShowCards} className="buttonDiv">
             {showAllCards ? "View Less" : "View All"}
           </button>
         </div>

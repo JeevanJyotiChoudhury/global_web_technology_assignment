@@ -8,15 +8,21 @@ import heart from "../assets/Icon feather-heart.png";
 
 const Logobar = () => {
   return (
-    <div style={{ width: "70%", margin: "auto" }}>
-      <div style={{ display: "flex", alignItems: "center",justifyContent:"space-between" }}>
+    <div className="topMainDiv">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
         <div>
           <img src={location} alt="location" />
         </div>
-        <div>
+        <div className="mainLogo">
           <img src={logo} alt="logo" />
         </div>
-        <div style={{ display: "flex", alignItems: "center",width:"20%", justifyContent:"space-between" }}>
+        <div className="topLogoDiv">
           <div>
             <img src={binocular} alt="binocular" />
           </div>

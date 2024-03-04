@@ -3,27 +3,9 @@ import { animation } from "../data";
 
 const Animation = () => {
   return (
-    <div
-      style={{
-        display: "grid",
-        width: "70%",
-        margin: "auto",
-        gridTemplateColumns: "repeat(4,1fr)",
-        gap: "1rem",
-        paddingBottom: "1rem",
-      }}
-    >
+    <div className="animationGrid">
       {animation.map((elem, index) => (
-        <div
-          key={index}
-          style={{
-            width: "100%",
-            height: "16rem",
-            border: "1px solid #70645c",
-            borderRadius: "50%",
-            overflow: "hidden",
-          }}
-        >
+        <div className="circular-container" key={index}>
           <div
             style={{ display: "flex", justifyContent: "center", height: "50%" }}
           >

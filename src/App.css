@@ -1,0 +1,372 @@
+/* //environment.css */
+
+.textDiv {
+  width: 60%;
+  text-align: center;
+}
+.texth1 {
+  color: #70645c;
+  font-size: 2.5rem;
+}
+.textPara {
+  width: 70%;
+  text-align: center;
+}
+.sliderDiv {
+  width: 40%;
+}
+/* category.css */
+.container {
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+  width: 70%;
+  margin: auto;
+  border-bottom: 2px solid #cdcdcd;
+}
+.buttonMainDiv {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+.nameDiv {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+.star {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+.star div {
+  display: flex;
+  align-items: center;
+}
+.star p {
+  font-size: 0.7rem;
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.price {
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  text-align: center;
+}
+.buttonDiv {
+  border-radius: 50px;
+  padding: 0.2rem 2rem;
+  border: 2px solid #707070;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* best seller css */
+.bestSellerDiv {
+  width: 70%;
+  margin: 2rem 0;
+  border-bottom: 2px solid #cdcdcd;
+  margin: auto;
+}
+.bestSeller {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* testimonial.css */
+.testimonial {
+  width: 70%;
+  border-bottom: 2px solid #cdcdcd;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+/* timeless.css */
+.timelessMain {
+  width: 70%;
+  margin: auto;
+  padding: 2rem 0;
+}
+.timelessGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+/* animation.css */
+.animationGrid {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.circular-container {
+  width: 100%;
+  height: 16rem;
+  border: 1px solid #70645c;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* footer.css */
+.footerMain {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 1rem;
+}
+.footerLogo {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+.bottomBarDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.logoBar {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navbar.css */
+.navbar {
+  width: 70%;
+  margin: auto;
+  padding: 0.5% 0;
+}
+.navbar div {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.topLogoDiv {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.topMainDiv {
+  width: 70%;
+  margin: auto;
+}
+@media all and (min-width: 330px) and (max-width: 766px) {
+  .mainDiv {
+    flex-direction: column;
+  }
+  .textDiv {
+    width: 100%;
+  }
+  .texth1 {
+    font-size: 1.5rem;
+  }
+  .textPara {
+    width: 100%;
+  }
+  .sliderDiv {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  /* category.css */
+  .container {
+    width: 95%;
+  }
+  .buttonMainDiv {
+    width: 70%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .buttonMainDiv img {
+    width: 40%;
+  }
+  .product-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: auto;
+  }
+  .nameDiv {
+    font-size: 1.2rem;
+  }
+  .star p {
+    font-size: 1.1rem;
+  }
+  .price {
+    font-size: 1.1rem;
+  }
+  /* best seller css */
+
+  .bestSeller {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* testimonial.css */
+  .testimonial {
+    width: 85%;
+  }
+
+  /* timeless.css */
+  .timelessMain {
+    width: 85%;
+  }
+  .timelessGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* animation.css */
+  .animationGrid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+  }
+  .circular-container {
+    height: 21rem;
+  }
+  /* footer.css */
+  .footerMain {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .footerLogo {
+    width: 90%;
+  }
+  .bottomBarDiv {
+    flex-direction: column;
+    width: 100%;
+  }
+  .logoBar {
+    width: 100%;
+  }
+  /* navbar.css */
+  .navbar {
+    width: 100%;
+  }
+  .navbar div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+  .mainLogo img {
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .topLogoDiv {
+    width: 80%;
+  }
+  .topMainDiv {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 767px) and (max-width: 1024px) {
+  .mainDiv {
+    flex-direction: column;
+  }
+  .textDiv {
+    width: 100%;
+  }
+  .texth1 {
+    font-size: 2rem;
+  }
+  .textPara {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  .sliderDiv {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  /* category.css */
+  .container {
+    width: 95%;
+  }
+  .buttonMainDiv {
+    width: 90%;
+    gap: 1rem;
+  }
+  .buttonMainDiv img {
+    width: 45%;
+  }
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+  }
+  .nameDiv {
+    font-size: 1.5rem;
+  }
+  .star p {
+    font-size: 1.3rem;
+  }
+  .price {
+    font-size: 1.3rem;
+  }
+  .buttonDiv {
+    border-radius: 50px;
+    padding: 0.5rem 4rem;
+    border: 2px solid #707070;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  /* best seller css */
+  .bestSellerDiv {
+    width: 85%;
+  }
+  .bestSeller {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  /* testimonial.css */
+  .testimonial {
+    width: 85%;
+  }
+
+  /* timeless.css */
+  .timelessMain {
+    width: 85%;
+  }
+  .timelessGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* animation.css */
+  .animationGrid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+  }
+  .circular-container {
+    height: 21rem;
+  }
+  /* footer.css */
+  .footerMain {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footerLogo {
+    width: 90%;
+  }
+  .bottomBarDiv {
+    width: 100%;
+    gap: 4rem;
+  }
+  /* navbar.css */
+  .navbar {
+    width: 95%;
+    margin: auto;
+  }
+}

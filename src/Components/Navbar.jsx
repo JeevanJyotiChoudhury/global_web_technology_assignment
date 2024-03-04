@@ -3,8 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <div style={{ borderTop: "1px solid #dcdcdc" }}>
-      <div style={{ width: "70%", margin: "auto", padding: "0.5% 0" }}>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="navbar"
+        >
+        <div >
           <p>Home</p>
           <p>Face</p>
           <p>Hair</p>

@@ -13,18 +13,11 @@ import visa from "../assets/Icon metro-visa.png";
 const Bottombar = () => {
   return (
     <div style={{ width: "70%", margin: "auto", padding: "0.5% 0" }}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="bottomBarDiv">
         <div>
           <img src={bottombar} alt="bottombar" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "60%",
-            alignItems: "center",
-          }}
-        >
+        <div className="logoBar">
           <div>
             <img src={upi} alt="upi" />
           </div>

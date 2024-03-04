@@ -4,12 +4,7 @@ import { buttonData } from "../data";
 const Buttons = ({ selectedCategory, handleCategoryChange }) => {
   return (
     <div
-      style={{
-        width: "100%",
-        margin: "auto",
-        display: "flex",
-        justifyContent: "space-between",
-      }}
+      className="buttonMainDiv"
     >
       {buttonData.map((button, index) => (
         <button

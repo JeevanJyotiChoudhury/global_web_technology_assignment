@@ -17,7 +17,7 @@ const Testimonial = () => {
     arrows: true,
     nextArrow: (
       <div>
-        <div className="next-slick-arrow" style={{cursor:"pointer"}}>
+        <div className="next-slick-arrow" style={{ cursor: "pointer" }}>
           <img src={rightArrow} alt="" />
         </div>
       </div>
@@ -25,21 +25,37 @@ const Testimonial = () => {
 
     prevArrow: (
       <div>
-        <div className="next-slick-arrow" style={{cursor:"pointer"}}>
+        <div className="next-slick-arrow" style={{ cursor: "pointer" }}>
           <img src={leftArrow} alt="" />
         </div>
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 220,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div
-      style={{
-        borderBottom: "2px solid #cdcdcd",
-        width: "70%",
-        margin: "auto",
-        paddingBottom: "2rem",
-      }}
-    >
+    <div className="testimonial">
       <h1
         style={{
           textAlign: "center",
